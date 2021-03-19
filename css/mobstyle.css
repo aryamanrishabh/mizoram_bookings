@@ -1,351 +1,375 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    /* background-color: black; */
-    font-family: "Roboto", sans-serif;
+  /* background-color: black; */
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
-    transition: all 0.8s;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    /* z-index: 1030; */
+  transition: all 0.8s;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* z-index: 1030; */
 }
 
 .navbar .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbar .navbar-brand {
-    color: #fff;
+  color: #fff;
 }
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.active .nav-link {
-    color: #555;
+  color: #555;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
-    text-decoration: none;
+  color: #555;
+  text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #555;
+  color: #555;
 }
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
-    .navbar .navbar-brand,
-    .navbar .nav-link,
-    .navbar-toggler {
-        color: white;
-    }
+  .navbar .navbar-brand,
+  .navbar .nav-link,
+  .navbar-toggler {
+    color: white;
+  }
 }
 
 .brand-head {
-    font-size: 7vw;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    color: #f03f35;
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #f03f35;
 }
 
 .landing {
-    height: 100vh;
-    background-color: #81d0d1;
-    color: #f03f35;
+  height: 100vh;
+  background-color: #81d0d1;
+  color: #f03f35;
 }
 
 .events {
-    display: block;
-    height: auto;
-    background-color: #fc4445;
+  display: block;
+  height: auto;
+  background-color: #fc4445;
 }
 
 .football-locations {
-    display: block;
-    height: auto;
-    background-color: #fc4445;
-    padding-top: 70px;
+  display: block;
+  height: auto;
+  background-color: #fc4445;
+  padding-top: 70px;
 }
 
 .football-calendar {
-    display: block;
-    height: 105vh;
-    background-color: #fc4445;
-    padding-top: 70px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+  display: block;
+  height: 105vh;
+  background-color: #fc4445;
+  padding-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .thumb {
-    position: relative;
-    height: fit-content;
-    width: 100%;
-    /* width: 50%; */
-    /* padding: 0; */
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  /* width: 50%; */
+  /* padding: 0; */
 }
 
 .thumb-img {
-    display: block;
-    width: 75vw;
-    height: 75vw;
-    object-fit: cover;
+  display: block;
+  width: 75vw;
+  height: 75vw;
+  object-fit: cover;
 }
 
 .overlay-top {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #008cba;
-    overflow: hidden;
-    /* width: 100%; */
-    height: 0;
-    transition: 0.5s ease;
-    margin: 0px 15px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  /* width: 100%; */
+  height: 0;
+  transition: 0.5s ease;
+  margin: 0px 15px;
 }
 
 .thumb:hover .overlay-top {
-    bottom: 0;
-    height: 100%;
+  bottom: 0;
+  height: 100%;
 }
 
 .overlay-bottom {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #008cba;
-    overflow: hidden;
-    /* width: 100%; */
-    height: 0;
-    transition: 0.5s ease;
-    margin: 0px 15px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  /* width: 100%; */
+  height: 0;
+  transition: 0.5s ease;
+  margin: 0px 15px;
 }
 
 .thumb:hover .overlay-bottom {
-    top: 0;
-    height: 100%;
+  top: 0;
+  height: 100%;
 }
 
 .overlay-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    background-color: #008cba;
-    overflow: hidden;
-    /* width: 0; */
-    height: 100%;
-    transition: 0.5s ease;
-    margin: 0px 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background-color: #008cba;
+  overflow: hidden;
+  /* width: 0; */
+  height: 100%;
+  transition: 0.5s ease;
+  margin: 0px 15px;
 }
 
 .thumb:hover .overlay-left {
-    right: 0;
+  right: 0;
 }
 
 .overlay-right {
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    background-color: #008cba;
-    overflow: hidden;
-    /* width: 0; */
-    height: 100%;
-    transition: 0.5s ease;
-    margin: 0px 15px;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  /* width: 0; */
+  height: 100%;
+  transition: 0.5s ease;
+  margin: 0px 15px;
 }
 
 .thumb:hover .overlay-right {
-    left: 0;
+  left: 0;
 }
 
 .text {
-    /* color: white; */
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
+  /* color: white; */
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .football-overlay {
-    background-color: #d11221;
+  background-color: #d11221;
 }
 
 .football-overlay .text {
-    color: black;
+  color: black;
 }
 
 .swimming-overlay {
-    background-color: #11e5e6;
+  background-color: #11e5e6;
 }
 
 .swimming-overlay .text {
-    color: white;
+  color: white;
 }
 
 .camping-overlay {
-    background-color: #26a4a3;
+  background-color: #26a4a3;
 }
 
 .camping-overlay .text {
-    color: #ffd13c;
+  color: #ffd13c;
 }
 
 .dancing-overlay {
-    background-color: #e6e5e0;
+  background-color: #e6e5e0;
 }
 
 .dancing-overlay .text {
-    color: black;
+  color: black;
 }
 
 .basketball-overlay {
-    background-color: #1a1a1a;
+  background-color: #1a1a1a;
 }
 
 .basketball-overlay .text {
-    color: #f45d0f;
+  color: #f45d0f;
 }
 
 .fishing-overlay {
-    background-color: #55a9d8;
+  background-color: #55a9d8;
 }
 
 .fishing-overlay .text {
-    color: white;
+  color: white;
 }
 
 .nature-overlay {
-    background-color: #f69495;
+  background-color: #f69495;
 }
 
 .nature-overlay .text {
-    color: white;
+  color: white;
 }
 
 .trekking-overlay {
-    background-color: #81b2ff;
+  background-color: #81b2ff;
 }
 
 .trekking-overlay .text {
-    color: #14374b;
+  color: #14374b;
 }
 
 .football {
-    position: relative;
-    height: 100%;
-    background-color: #f85151;
-    color: black;
-    padding-top: 80px;
+  position: relative;
+  height: 100%;
+  background-color: #f85151;
+  color: black;
+  padding-top: 80px;
+}
+
+.swimming {
+  position: relative;
+  height: 100%;
+  background-color: skyblue;
+  color: black;
+  padding-top: 80px;
+}
+
+.basketball {
+  position: relative;
+  height: 100%;
+  background-color: rgb(247, 242, 0);
+  color: black;
+  padding-top: 80px;
+}
+
+.camping {
+  position: relative;
+  height: 100%;
+  background-color: rgb(0, 167, 0);
+  color: black;
+  padding-top: 80px;
 }
 
 .booking-info {
-    display: block;
+  display: block;
 }
 
 .booking-writeup {
-    width: 100%;
+  width: 100%;
 }
 
 .booking-image-container {
-    max-height: 50%;
-    padding-bottom: 20px;
-    padding-right: 20px;
+  max-height: 50%;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .booking-image {
-    height: 40vh;
-    margin: auto;
+  height: 40vh;
+  margin: auto;
 }
 
 .booking-btn {
-    text-align: center;
+  text-align: center;
 }
 
 .football-head {
-    display: inline-block;
-    width: 100%;
-    font-size: 10vw;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    color: rgb(41, 41, 41);
+  display: inline-block;
+  width: 100%;
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: rgb(41, 41, 41);
 }
 
 .table .btn {
-    /* padding: 0; */
-    width: 80%;
-    height: 50%;
-    display: inline-flex;
-    align-items: center;
-    margin: auto;
+  /* padding: 0; */
+  width: 80%;
+  height: 50%;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
 }
 
 .table .btn .fa-check,
 .table .btn .fa-times {
-    margin: auto;
+  margin: auto;
 }
 
 .table td {
-    text-align: center;
-    padding: 0;
-    height: 12vh;
+  text-align: center;
+  padding: 0;
+  height: 12vh;
 }
 
 .table th {
-    padding: 0;
-    text-align: center;
-    height: 5vh;
-    line-height: 5vh;
+  padding: 0;
+  text-align: center;
+  height: 5vh;
+  line-height: 5vh;
 }
 
 .football-calendar .container {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .football-calendar .container .row {
-    margin-left: 0;
-    margin-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .football-calendar .container .row .col-md-12 {
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .timeslot {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
