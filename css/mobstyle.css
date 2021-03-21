@@ -288,7 +288,23 @@ body {
 .camping {
   position: relative;
   height: 100%;
-  background-color: rgb(0, 167, 0);
+  background-color: rgb(79, 204, 79);
+  color: black;
+  padding-top: 80px;
+}
+
+.dance {
+  position: relative;
+  height: 100%;
+  background-color: rgb(216, 189, 166);
+  color: black;
+  padding-top: 80px;
+}
+
+.fishing {
+  position: relative;
+  height: 100%;
+  background-color: rgb(95, 136, 199);
   color: black;
   padding-top: 80px;
 }
