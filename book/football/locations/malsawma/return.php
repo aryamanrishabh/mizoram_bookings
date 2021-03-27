@@ -17,7 +17,7 @@
 		echo "<h1>Success</h1>";
 		echo "<p>Order ID: ".$orderId." </p>";
 		$mysqli = new mysqli('localhost', 'root', '', 'football');
-		$stmt = $mysqli->prepare("UPDATE bookings SET payment=? WHERE id=?");
+		$stmt = $mysqli->prepare("UPDATE malsawma SET payment=? WHERE id=?");
 		$stmt->bind_param('ss',$success,$orderId);
 		$stmt->execute();
 		$stmt->close();

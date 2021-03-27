@@ -7,7 +7,7 @@
 	$orderAmount = '1000';
 	$date = $_POST['date'];
 	$mysqli = new mysqli('localhost', 'root', '', 'football');
-	$stmt = $mysqli->prepare("INSERT INTO bookings (id, name, phone, email, date, timeslot) VALUES (?,?,?,?,?,?)");
+	$stmt = $mysqli->prepare("INSERT INTO malsawma (id, name, phone, email, date, timeslot) VALUES (?,?,?,?,?,?)");
 	$stmt->bind_param('ssssss',$id, $name, $phone, $email, $date, $timeslot);
 	$stmt->execute();
 	$msg = "<div class='alert alert-success'>Booking Successfull</div>";

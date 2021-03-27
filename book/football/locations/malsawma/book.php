@@ -3,7 +3,7 @@
     if(isset($_GET['date'])){
         $date = $_GET['date'];
         $success = 'success';
-        $stmt = $mysqli->prepare('select * from bookings where date=? AND payment=?');
+        $stmt = $mysqli->prepare('select * from malsawma where date=? AND payment=?');
         $stmt->bind_param('ss',$date,$success);
         $bookings=array();
         if($stmt->execute()){
@@ -23,7 +23,7 @@
         $timeslot = $_POST['timeslot'];
         $id = $_POST['id'];
         $mysqli = new mysqli('localhost', 'root', '', 'football');
-        $stmt = $mysqli->prepare('select * from bookings where date=? AND timeslot=?');
+        $stmt = $mysqli->prepare('select * from malsawma where date=? AND timeslot=?');
         $stmt->bind_param('ss',$date,$timeslot);
         
         if($stmt->execute()){
